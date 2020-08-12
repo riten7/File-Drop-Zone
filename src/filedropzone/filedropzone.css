@@ -1,0 +1,102 @@
+.file-input {
+    display: none;
+} 
+
+.container {
+    color: #708a15;
+}
+
+.container p {
+    color: red;
+    text-align: center;
+}
+
+.drop-container {
+    position: relative;
+    height: 80px;
+    border: 1px dashed #708a15;
+    margin-bottom: 25px;
+}
+
+.drop-message {
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.file-status-bar{
+    width: 100%;
+    vertical-align:top;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 50px;
+}
+  
+.file-status-bar > div {
+    overflow: hidden;
+}
+  
+.file-type {
+    display: inline-block!important;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 6px;
+    padding: 0 4px;
+}
+  
+.file-name, .file-error {
+    display: inline-block;
+    vertical-align:middle;
+    color: #708a15;
+    height: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+.file-error {
+    color: #9aa9bb;
+}
+
+.file-error-message {
+    color: red;
+    text-align: center;
+    font-size: 12px;
+}
+  
+.file-type-logo {
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    position: absolute;
+}
+  
+.file-size {
+    display:inline-block;
+    vertical-align:top;
+    color:#30693D;
+    margin-left:10px;
+    margin-right:5px;
+    margin-left: 10px;
+    color: #444242;
+    font-weight: 700;
+    font-size: 14px;
+}
+  
+.file-remove  {
+    position: absolute;
+    top: 10px;
+    font-size: 12px;
+    right: 10px;
+    line-height: 15px;
+    cursor: pointer;
+    color: red;
+    margin-right: -10px;
+}
+
+.error {
+    color: red;
+}

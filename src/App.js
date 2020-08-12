@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from 'antd';
+import FileDropZone from './filedropzone/FileDropZone';
 
 function App() {
+  const [showModal, setShowModal] = React.useState(false);
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <Button type="primary" onClick={() => setShowModal(true)}>
+        Upload Files
+      </Button>
+      <FileDropZone
+        show={showModal}
+        setShowModal={() => setShowModal(false)} />
     </div>
   );
 }
